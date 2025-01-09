@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center">ITERABLES</h1>
+        <p class="text-center">Click on each topic to learn more.</p>
+        <div class="row">
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#iterablesModal">
+                    Iterables
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#iteratingIterablesModal">
+                    Iterating Through Iterables
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#membershipOperatorModal">
+                    Membership Operator
+                </button>
+            </div>
+
+        </div>
+        
+        
+
+</div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="iterablesModal" tabindex="-1" aria-labelledby="iterablesLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="iterablesLabel">Iterables</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem;">
+                                    In Python programming, <b>iterable</b> is any object you can <b>“loop through”</b> or iterate over using a for loop.
+                                    <br><br>
+                                    You can think of it as a container that holds multiple items.
+                                    <br><br>
+                                    <strong style="color: #28a745;">For example:</strong>
+                                    <ul>
+                                        <li><b>List</b></li>
+                                        <li><b>Tuple</b></li>
+                                        <li><b>Dictionary</b></li>
+                                        <li><b>Set</b></li>
+                                    
+                                    </ul>
+                                    It may seem like iterables are non-primitive data types but that’s not true there are iterables are not non-primitive data type too!<br>
+                                    <strong style="color: #28a745;">For example:</strong>
+                                    <ul>
+                                        <li><b>String</b> (It is a primitive data type.)</li>
+                                    </ul>
+
+                            
+                                    Apart from these, there are some more iterables that we will learn about in coming classes. 🌟
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="iteratingIterablesModal" tabindex="-1" aria-labelledby="iteratingIterablesLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="iteratingIterablesLabel">Iterating Through Iterables</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem;">
+                                   
+                                    
+        
+                                    <strong style="color: #28a745;">LIST</strong>
+                                    <p style="font-size: 1.5rem;">Here is the the list of numbers you have and you wish to print numbers less than 40.</p>
+                                   <img src="./images/image31.png" alt=""><br>
+                                    <br><p style="font-size: 1.5rem;">To do that you need to check every item in the list. Let’s see how you access the items in a list using a for loop:</p>
+                                    <img src="./images/image33.png" alt="" width="28%"><br>
+                                    <p style="font-size: 1.5rem;">The line <b>for item in nums</b> tells Python to repeat some operation for every element in the provided iterable.
+                                        <br><br>During each iteration, one value is assigned to item, and print(item) prints that value.
+                                        
+                                        <br><br>
+                                        We can now check if the number is less than 40 and print only those numbers.
+                                        </p>
+                                        <img src="./images/image32.png" alt="" width="30%"><br>
+        
+                                    <br><br>
+                                    <strong style="color: #28a745;">TUPLE</strong>
+                                    <p style="font-size: 1.5rem;">The <b>for loop</b> iterates over the tuple tup.<br>During each iteration, one value is assigned to item, and print(item) prints that value.</p>
+                                    <img src="./images/image35.png" alt=""><br>
+        
+                                    <br>
+                                    <strong style="color: #28a745;">SET</strong>
+                                    <p style="font-size: 1.5rem;">The <b>for loop</b> iterates over the set <code>my_set</code>.<br>During each iteration, one value is assigned to item, and print(item) prints that value.</p>
+                                    <img src="./images/image34.png" alt=""><br>
+        
+                                    <br>
+                                    <strong style="color: #28a745;">DICTIONARY</strong>
+                                    <p style="font-size: 1.5rem;">Iterating through a dictionary is a bit different. They have <b>keys</b> and <b>values</b>. We can choose to loop through a dictionary through keys, values, or both.
+                                        <br><br>When you loop over a dictionary without specifying what to loop over, Python iterates through its keys by default.
+                                        </p>
+                                        <img src="./images/image38.png" alt="" width="60%"><br>
+                                        <img src="./images/image37.png" alt="" width="28%"><br><br>
+                                    <p style="font-size: 1.5rem;">The loop variable key holds the current key in each iteration.
+                                        <br>You can use the key to access its corresponding value using students[key].
+                                        </p>
+                                        <img src="./images/image43.png" alt="" width="30%"><br><br>
+                                    <ul>
+                                        <li><b>Using .keys()</b>: You can use .keys() method to loop through all the keys in a dictionary.
+                                            <br>During each iteration, a new key is assigned to the loop variable key and print(key) prints that.
+                                            <br><img src="./images/image41.png" alt="" width="30%"><br>
+                                            </li><br>
+                                        <li><b>Using .values()</b>: You can use .values() method to loop through all the values in a dictionary.
+                                            <br>During each iteration, a new value is assigned to the loop variable value and print(value) prints that.
+                                            <br><img src="./images/image47.png" alt="" width="30%"><br>
+                                            </li><br>
+                                        <li><b>Using .items()</b>: To loop through both keys and values simultaneously, you can use .items() method.
+                                            <br>The .items() method returns a collection of key-value pairs as tuples.
+                                            <br>The for loop unpacks these tuples into two variables -key and value
+                                            <br><img src="./images/image44.png" alt="" width="30%"><br>
+
+                                        </li>
+                                    </ul>
+        
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="membershipOperatorModal" tabindex="-1" aria-labelledby="membershipOperatorLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="membershipOperatorLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem;">
+                                    <p style="font-size: 1.5rem;text-align: center;">
+                                        <img src="./images/1.png" alt="" width="40%"><br><br>
+                                    
+                                    </p>
+                                    Here, we are manually checking each element in the list. While this works but, it can become a bit tedious and complex when dealing with larger lists.
+                                    <br><br>This brings us to a much simpler and more efficient way of checking if an element is in a iterable: the <b>membership operator</b>.<br><br>
+                                     <h2 style="text-align: center;"><u>MEMBERSHIP OPERATOR</u></h2>
+                                    Imagine you have a bag full of different chocolates and you want to check if a particular chocolate is present or not without taking everything out. How would you do that?<br><br>
+                                   Well in real life it can be tricky to check if a particular chocolate is present or not but, in Python, we have a quick and easy way to check if something exists within a collection of data. These are called <b>membership operators</b>.
+                                    <br><br>
+                                    <strong style="color: #28a745;">The membership operators are:</strong>
+                                    <ul>
+                                        <li><b>in</b>: It checks if something exists in a collection.</li>
+                                        <li><b>not in</b>: It checks if something does not exist in a collection.</li>
+                                    </ul>
+                                    Membership operators work with lists, tuples, sets, dictionaries, and even strings!<br><br>
+                                    Let’s see them one by one.
+                                    <br><br>
+        
+                                    <strong style="color: #007bff;">Lists:</strong><br>
+                                    <img src="./images/image46.png" alt="" width="40%"><br><br>
+                                    <p style="font-size: 1.5rem;"><b>Using <b>in</b> operator:</b><br>We can check if a value is present in a list using the in operator.</p>
+                                    <img src="./images/image48.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">
+                                        It gives True because Pen is present in the list.
+                                        <br>Now let’s check for something that’s not present in the list.
+                                    </p><img src="./images/image50.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">
+                                        It gives False because Ruler is not present in the list.<br><br>Let’s reverse it by using <b>not in</b>.<br><b>Using not in operator:</b>
+                                    </p>
+                                    <img src="./images/image51.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">
+                                        It gives True because Ruler is not present in the list.
+                                        <br> <br><img src="./images/image52.png" alt="" width="25%"><br>
+                                        It gives False because Pen is present in the list.
+                                    </p>
+        
+                                    <br>
+                                    <strong style="color: #007bff;">Tuples:</strong><br>
+                                    Although tuples and lists are a bit different when it comes to membership operators, they work the same!<br>
+                                    <img src="./images/image53.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;"><b>Using in operator:</b></p>
+                                    <img src="./images/image54.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives True because 24 is present in the tuple.</p>
+                                    <img src="./images/image55.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives False because 60 is not present in the tuple.</p>
+                                    <p style="font-size: 1.5rem;"><b>Using not in operator:</b></p>
+                                    <img src="./images/image56.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives True because 60 is not present in the tuple.</p>
+                                    <img src="./images/image21.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives False because 24 is present in the tuple.</p>
+        
+                                    <br>
+                                    <strong style="color: #007bff;">Sets:</strong>
+                                    <p style="font-size: 1.5rem;">The membership operator works similarly as in a list and a tuple.</p>
+                                    <img src="./images/image22.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;"> <b>Using in operator:</b></p>
+                                    <img src="./images/image23.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives True because 20 is present in the set.</p>
+                                    <img src="./images/image24.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives False because 21 is not present in the set.</p>
+                                    <p style="font-size: 1.5rem;"><b>Using not in operator:</b></p>
+                                    <img src="./images/image25.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives True because 21 is not present in the set.</p>
+                                    <img src="./images/image26.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives False because 20 is present in the set.</p>
+        
+                                    <br>
+                                    <strong style="color: #007bff;">Dictionaries:</strong><br>
+                                    For dictionaries, membership operators only check for the keys and not the values.
+                                    <br><img src="./images/image27.png" alt="" width="40%"><br><br>
+                                    <p style="font-size: 1.5rem;"><b>Using in operator:</b></p>
+                                    <img src="./images/image28.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives True because name is a key.</p>
+                                    <img src="./images/image29.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives False because city is not a key.</p>
+                                
+                                    <p style="font-size: 1.5rem;"><b>Using not in operator:</b></p>
+                                    <img src="./images/image30.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives True because city is not a key.</p>
+                                    <img src="./images/image10.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives False because name is a key.</p>
+        
+                                    <br>
+                                    <strong style="color: #007bff;">Strings:</strong>
+                                    <p style="font-size: 1.5rem;">In strings, the membership operator lets you check : </p>
+                                    <ul>
+                                        <li>If a character exists within a string</li>
+                                        <li>If a substring exists within a string</li>
+                                    </ul>
+                                    <img src="./images/image11.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;"><b>Using in operator:</b></p>
+                                    <img src="./images/image12.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives True because the character ‘C’ is present in the string.</p>
+                                    <img src="./images/image14.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives True because the substring ‘Coder’ is present in the string.</p>
+                                    <img src="./images/image15.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives False because the character ‘z’ is not present in the string.</p>
+                                    <p style="font-size: 1.5rem;"><b>Using not in operator:</b></p>
+                                    <img src="./images/image16.png" alt="" width="25%"><br><br>
+                                    <p style="font-size: 1.5rem;">It gives True because the substring ‘Bye’ is not present in the string.</p>
+                                    <img src="./images/image17.png" alt="" width="25%"><br>
+                                    <p style="font-size: 1.5rem;">It gives False because the substring ‘Hello’ is present in the string.</p>
+                                    <br>
+                                    <p style="font-size: 1.5rem;">You can think of membership operators like searching for a specific word in a document where <b>‘in’</b> asks, ‘Does this word exist?’ and <b>‘not in’</b> asks ‘Is this word missing?’
+                                        <br>Just as you would scan a document to see if a word is present, Python scans a list, tuple, set dictionary, or string to check the existence of a particular element, key, character, or word.
+                                        </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
